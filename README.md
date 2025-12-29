@@ -1,10 +1,10 @@
-# RFP Briefing Agent
+# RFP Briefing Command
 
 <br><br> 
-<img width="4207" height="724" alt="rfp-briefing-agent visualization" src="https://github.com/user-attachments/assets/3ab01813-155d-4c34-adc1-a3c35bfccfa6" />
+<img width="4400" height="760" alt="rfp briefing command" src="https://github.com/user-attachments/assets/a074e872-37c5-4d22-af69-e0d04b08e2d2" />
 <br><br><br>
 
-`rfp-briefing-agent` is a Claude Code subagent. It reviews an RFP (Request for Proposal) and creates a concise 1-page briefing in minutes.
+`rfp-briefing-command` is designed to be used as a one-shot LLM prompt with Claude Code within an RFP folder. It reviews RFP documents and creates a concise 1-page briefing in minutes.
 
 The briefing takes into account all available RFP documents and consists of:
 * RFP Overview
@@ -21,8 +21,7 @@ The briefing takes into account all available RFP documents and consists of:
 The agent **reduces time-to-kick-off** and allows sales teams to **increase efficiency** when it comes to: Scoping, qualification and assessment, coordination of cross-functional internal teams.
 
 ## Instructions
-1. Clone the agent to your RFP directory
-2. Launch Claude Code within the project folder
-3. Prompt Claude Code to review the RFP using `rfp-briefing-agent` <br>
+1. Navigate to the RFP directory 
+2. Execute prompt. For direct execution, it can be configured as a Claude Code slash command.<br>
 
-The briefing will be saved to the RFP folder.
+The briefing will be saved to the RFP folder as an .md file and a .doc file.

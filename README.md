@@ -4,7 +4,7 @@
 <img width="4400" height="760" alt="rfp briefing command" src="https://github.com/user-attachments/assets/a074e872-37c5-4d22-af69-e0d04b08e2d2" />
 <br><br><br>
 
-`rfp-briefing-command` is designed to be used as a one-shot LLM prompt with Claude Code within an RFP folder. It reviews RFP documents and creates a concise 1-page briefing in minutes.
+`rfp-briefing-command` is designed to be used as a one-shot Claude Code prompt within an RFP folder. It reviews RFP documents and creates a concise 1-page briefing in minutes.
 
 The briefing takes into account all available RFP documents and consists of:
 * RFP Overview

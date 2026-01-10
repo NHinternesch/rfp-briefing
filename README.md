@@ -22,6 +22,6 @@ The agent **reduces time-to-kick-off** and allows sales teams to **increase effi
 
 ## Instructions
 1. Navigate to the RFP directory 
-2. Execute prompt. For direct execution, it can be configured as a Claude Code slash command.<br>
+2. Execute prompt. For direct execution, configure as a Claude Code slash command.<br>
 
 The briefing will be saved to the RFP folder as an .md file and a .doc file.

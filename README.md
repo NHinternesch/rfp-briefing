@@ -1,4 +1,4 @@
-# RFP Briefing Command
+# RFP Briefing Skill
 
 <br><br> 
 <img width="4400" height="760" alt="rfp briefing command" src="https://github.com/user-attachments/assets/a074e872-37c5-4d22-af69-e0d04b08e2d2" />

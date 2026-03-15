@@ -1,8 +1,13 @@
-## Primary Objective
+---
+name: rfp-briefing
+description: Review all RFP documents in a folder and subfolders and draft a concise 1-page summary briefing with the key points from the RFP documents. Use this skill whenever the user asks to "review an RFP", "summarize an RFP", "create an RFP briefing", or asks to review/analyze vendor or procurement documents. Also trigger when the user wants to prepare for an RFP response or understand what an RFP is asking for.
+---
 
-The main objective of Claude Code when working in this directory is to review all RFP documents in this folder and subfolders and draft a concise 1-page summary briefing with the key points from the RFP documents. 
+# RFP Briefing
+ 
+This skill scans all RFP documents in a directory and generates a concise 1-page briefing summarizing the key points.
 
-## Directory Overview
+## Directory Context
 
 This directory contains RFP (Request for Proposal) documents of a buyer looking to purchase an enterprise SaaS solution. 
 The documents consist of various file types, such as Word documents, PDFs, Excel sheets, Power Point presentations, etc.
@@ -25,11 +30,11 @@ Additional expert groups may be added in the future as needed.
 
 When tasked to create an RFP briefing, the workflow consists of:
 
-1. **Scan all documents** 
+### Step 1 - Scan all documents
   - Scan all file types, including but not limited to .pdf, .doc, .docx, .xls, .xlsx, .csv, .txt, .ppt, .pptx, etc.
-  - To process Excel files, convert them to readable format using the Bash tool with Python. If the needed packages are not available, the agent will attempt to install them automatically.
 
-2. **Extract key information** including:
+### Step 2 - Extract key information
+While scanning, extract:
   - Company/organization details
   - Project scope and requirements
   - Timeline and milestones
@@ -40,16 +45,16 @@ When tasked to create an RFP briefing, the workflow consists of:
   - Technical specifications
   - Compliance requirements
 
-3. **Generate a 1-page briefing** 
-  - Strictly adhere to the structure outlined in the section RFP Briefing Content below
-  - Ensure conciseness, output should not exceed one page
-  - Save the briefing as an .md file to the project folder
-  - Also save the briefing as a .doc Word document to the project folder. Use a minimal but elegant design, use the font Helvetica and only use grayscale font color.
+### Step 3 — Generate the Briefing
+ 
+Produce a **1-page briefing** using the RFP Briefing Structure below. Be concise — do not exceed one page.
+ 
+Save outputs to the project folder:
+1. As a `.md` file
+2. As a `.docx` Word document — minimal but elegant design, font: **Helvetica**, **grayscale only**
 
-## RFP Briefing Content
 
-When generating the briefing, make sure to adhere to the 1 page format.
-The briefing should follow this structure:
+## RFP Briefing Structure
 
 **RFP Overview**
 - **Client:** [Organization name]
@@ -81,3 +86,9 @@ The briefing should follow this structure:
 
 **Required Content Contributiors**
 - [Identify the vendor expert groups that are needed to contribute content (see details about vendor expert groups below). If possible, indicate the estimated amount of input required from each expert group on a 3-step scale: Low, medium, high]
+
+## Output Notes
+ 
+- The briefing must strictly fit on one page — prioritize the most critical information.
+- For the Word document, read the docx SKILL.md at before generating, to ensure correct formatting and tooling.
+- If key information is missing or ambiguous in the source documents, note it with `[Not specified]` rather than omitting the field.

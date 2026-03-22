@@ -3,7 +3,6 @@ name: rfp-briefing
 description: "Review all RFP documents in a folder and subfolders and draft a concise 1-page summary briefing with the key points from the RFP documents. Use this skill whenever the user asks to review an RFP, summarize an RFP, create an RFP briefing, or asks to review/analyze vendor or procurement documents. Also trigger when the user wants to prepare for an RFP response or understand what an RFP is asking for."
 allowed-tools: Read, Bash, Write
 effort: medium
-tags: [rfp, briefing, summary, procurement, pre-sales]
 ---
 
 # RFP Briefing

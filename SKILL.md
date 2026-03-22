@@ -1,18 +1,18 @@
 ---
 name: rfp-briefing
 description: Review all RFP documents in a folder and subfolders and draft a concise 1-page summary briefing with the key points from the RFP documents. Use this skill whenever the user asks to "review an RFP", "summarize an RFP", "create an RFP briefing", or asks to review/analyze vendor or procurement documents. Also trigger when the user wants to prepare for an RFP response or understand what an RFP is asking for.
-allowed-tools: Read, Bash, Write                                                                                      
-effort: medium                                                                                                        
+allowed-tools: Read, Bash, Write
+effort: medium
 tags: [rfp, briefing, summary, procurement, pre-sales]
 ---
 
 # RFP Briefing
- 
+
 This skill scans all RFP documents in a directory and generates a concise 1-page briefing summarizing the key points.
 
 ## Directory Context
 
-This directory contains RFP (Request for Proposal) documents of a buyer looking to purchase an enterprise SaaS solution. 
+This directory contains RFP (Request for Proposal) documents of a buyer looking to purchase an enterprise SaaS solution.
 The documents consist of various file types, such as Word documents, PDFs, Excel sheets, Power Point presentations, etc.
 
 ## Vendor Expert Groups
@@ -49,9 +49,9 @@ While scanning, extract:
   - Compliance requirements
 
 ### Step 3 — Generate the Briefing
- 
+
 Produce a **1-page briefing** using the RFP Briefing Structure below. Be concise — do not exceed one page.
- 
+
 Save outputs to the project folder:
 1. As a `.md` file
 2. As a `.docx` Word document — minimal but elegant design, font: **Helvetica**, **grayscale only**
@@ -91,7 +91,7 @@ Save outputs to the project folder:
 - [Identify the vendor expert groups that are needed to contribute content (see details about vendor expert groups below). If possible, indicate the estimated amount of input required from each expert group on a 3-step scale: Low, medium, high]
 
 ## Output Notes
- 
+
 - The briefing must strictly fit on one page — prioritize the most critical information.
 - For the Word document, read the docx SKILL.md at before generating, to ensure correct formatting and tooling.
 - If key information is missing or ambiguous in the source documents, note it with `[Not specified]` rather than omitting the field.
